@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>检验检疫与跨境物流服务 | QC-Inspection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* 头部导航 */
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        nav ul li a:hover {
+            opacity: 0.8;
+        }
+
+        /* 横幅区域 */
+        .hero {
+            background: linear-gradient(135deg, #0056b3 0%, #003d80 100%);
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #ff6b00;
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #e65c00;
+        }
+
+        /* 服务区域 */
+        .services {
+            padding: 4rem 0;
+            background-color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: #0056b3;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            color: #0056b3;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .service-card ul {
+            list-style-position: inside;
+            color: #555;
+        }
+
+        /* 公司简介 */
+        .about {
+            padding: 4rem 0;
+            background-color: #f8f9fa;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            color: #0056b3;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+
+        /* 清关认证 */
+        .certification {
+            padding: 4rem 0;
+            background-color: white;
+        }
+
+        .cert-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .cert-item {
+            background-color: #0056b3;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                margin-top: 1rem;
+            }
+
+            nav ul li {
+                margin: 0 1rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部导航 -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">QC-Inspection</div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#services">服务项目</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- 横幅区域 -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>专业检验检疫与跨境物流服务</h1>
+            <p>我们提供专业的产品检验、检测、认证咨询及一站式跨境物流解决方案，助力全球贸易更简单、更可靠</p>
+            <a href="#contact" class="cta-button">立即咨询</a>
+        </div>
+    </section>
+
+    <!-- 服务项目 -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">核心服务</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>第三方检验检疫</h3>
+                    <ul>
+                        <li>生产初期/中期/终期检验</li>
+                        <li>集装箱监装、全检、抽样</li>
+                        <li>机械设备、五金、服装、玩具等检验</li>
+                        <li>供应商审核（人权/质量/环境/反恐验厂）</li>
+                        <li>电商检品服务、亚马逊验货返修</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>跨境物流服务</h3>
+                    <ul>
+                        <li>国际海运（整箱FCL/拼箱LCL）</li>
+                        <li>全球空运（普货/危险品/贵重物品）</li>
+                        <li>铁路运输（包仓包列、门到门）</li>
+                        <li>仓储与配送（保税/非保税）</li>
+                        <li>冷柜、危险品专业运输</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>清关与认证</h3>
+                    <ul>
+                        <li>专业报关、清关服务</li>
+                        <li>各国通关证书办理</li>
+                        <li>CE证书、安全认证咨询</li>
+                        <li>一站式认证解决方案</li>
+                        <li>降低成本，快速获证</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 公司简介 -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>关于我们</h2>
+                    <p><strong>青岛速航</strong>：跨境物流行业领先的数智化物流科技公司，成立于2013年。拥有超过2000名专业人员，在全球20多个国家和地区运营70+核心节点物流实体，服务超过27000家客户。</p>
+                    <p><strong>YSI</strong>：专业提供产品检验、检测、认证咨询的第三方服务机构。服务范围覆盖全国，拥有完善的技术服务网络，为客户提供优质、快速、便捷的检验认证解决方案。</p>
+                </div>
+                <div class="about-text">
+                    <h2>我们的优势</h2>
+                    <ul style="list-style-position: inside; color: #555;">
+                        <li>高素质专业团队，每年高额人才投入</li>
+                        <li>丰富的实践经验，多项实验监测积累</li>
+                        <li>高标准服务体系，7*24小时专业服务</li>
+                        <li>良好实践管理理念，注重安全质量KPI</li>
+                        <li>全球服务网络，覆盖主要贸易国家</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 清关认证国家 -->
+    <section class="certification">
+        <div class="container">
+            <h2 class="section-title">清关认证服务覆盖</h2>
+            <div class="cert-list">
+                <div class="cert-item">伊拉克 COC</div>
+                <div class="cert-item">坦桑尼亚 PVOC</div>
+                <div class="cert-item">喀麦隆 COC</div>
+                <div class="cert-item">加蓬 COC</div>
+                <div class="cert-item">沙特 SASO</div>
+                <div class="cert-item">肯尼亚 PVOC</div>
+                <div class="cert-item">尼日利亚 SONCAP</div>
+                <div class="cert-item">伊朗 VOC</div>
+                <div class="cert-item">埃及 COC</div>
+                <div class="cert-item">科威特 COC</div>
+                <div class="cert-item">津巴布韦 COC</div>
+                <div class="cert-item">乌干达 COC</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer id="contact">
+        <div class="container">
+            <p>SHANDONG YONGSHUN TRADE CONSULTING CO., LTD. | Qingdao Speedway International Shipping Co., Ltd.</p>
+            <p style="margin-top: 1rem;">Web: http://ys-inspection.com | 专业检验检疫与跨境物流服务商</p>
+            <p style="margin-top: 1rem; opacity: 0.7;">&copy; 2026 QC-Inspection. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
